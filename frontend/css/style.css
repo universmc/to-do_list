@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* styles.scss */
+/* Réinitialisation des styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Styles de base */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.hero {
+  background-image: url("hero-image.jpg"); /* Remplacez par votre image de fond */
+  background-size: cover;
+  text-align: center;
+  padding: 100px 0;
+  color: #fff;
+}
+
+.todo-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th, table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #333;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+  background-color: #ddd;
+}
+
+.cours-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#sommaire {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+  background-color: #eee;
+  padding: 15px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+#contenuCours {
+  width: 90%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.markdown-contenu {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.markdown-contenu h1, .markdown-contenu h2, .markdown-contenu h3 {
+  color: #333;
+}
+
+.markdown-contenu p {
+  color: #666;
+}
+
+.calendar {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*# sourceMappingURL=style.css.map */

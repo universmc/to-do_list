@@ -1,0 +1,10 @@
+
+{
+    "titre": "Modèle",
+    "sousSections": [
+    {
+    "contenu": "techniques et methodes avancées pour construire des modèles d'IA...",
+    "contenuMarkdown": "md/howto.md"
+    }
+    ]
+}

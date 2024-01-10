@@ -1,0 +1,13 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "Cette documentation définit la charte graphique pour l'interface utilisateur de l'API Univers MC Cloud, y compris les couleurs, la typographie, les composants d'interface utilisateur et d'autres éléments de style.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "style": "sass --watch frontend/sass/build.scss frontend/css/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

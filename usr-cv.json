@@ -1,0 +1,10 @@
+{
+    "user": {
+        "nom": "neofs",
+        "email": "admin@univers-mc.cloud",
+        "expérience": "Développeur Web Senior",
+        "compétences-frontend": ["HTML", "CSS", "JavaScript", "React"],
+        "compétences-backend": ["PHP", "SQL", "JSON", "NODEJS"],
+        "compétences-apirest": ["python", "ruby", "gpt", "tensor"]
+    }
+}
