@@ -3,31 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Application Todo</title>
-    <link rel="stylesheet" href="frontend/css/style.css">
+    <title>Todo-App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: #333;
+        }
+
+        code {
+            background-color: #f0f0f0;
+            padding: 2px 5px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-family: Consolas, monospace;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Accueil</a></li>
-                <li><a href="#">Tâches</a></li>
-                <li><a href="#">Calendrier</a></li>
-                <li><a href="#">Paramètres</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <h1>Welcome to Todo-App</h1>
+        <p>Cette documentation vous guidera à travers l'installation, l'utilisation et la structure de l'application.</p>
 
-    <section class="hero">
-        <h1>Bienvenue sur Mon Application Todo</h1>
-        <p>Gérez vos tâches efficacement avec notre application simple et intuitive.</p>
-    </section>
+        <h2>Installation</h2>
+        <p>Pour exécuter Todo-App sur votre machine locale, suivez ces étapes :</p>
+        <ol>
+            <li>Clonez le référentiel depuis GitHub :</li>
+        </ol>
+        <code>git clone https://github.com/universmc/todo-app.git</code>
+        <ol start="2">
+            <li>Accédez au répertoire du projet :</li>
+        </ol>
+        <code>cd Todo-App</code>
+        <ol start="3">
+            <li>Ouvrez le fichier index.html dans votre navigateur pour lancer l'application.</li>
+        </ol>
 
-    <section class="calendar">
-        <h2>Calendrier</h2>
-        <!-- Insérez ici le composant React pour le calendrier -->
-    </section>
+        <h2>Documentation d'Utilisation</h2>
+        <p>Interface Utilisateur :</p>
+        <ul>
+            <li>Pour ajouter une nouvelle tâche, remplissez le formulaire sur la page d'accueil et cliquez sur le bouton "Ajouter Tâche".</li>
+            <li>Pour mettre à jour une tâche, cliquez sur la tâche que vous souhaitez modifier, apportez les modifications nécessaires dans le formulaire, puis cliquez sur "Mettre à jour".</li>
+            <li>Pour supprimer une tâche, cliquez sur la tâche que vous souhaitez supprimer, puis cliquez sur "Supprimer".</li>
+        </ul>
 
-    <script src="bundle.js"></script> <!-- Incluez votre fichier bundle.js pour React -->
+        <h2>Structure Fullstack</h2>
+        <p>La structure fullstack de l'application est divisée en plusieurs composants :</p>
+        <h3>Frontend</h3>
+        <ul>
+            <li>Le frontend de l'application est basé sur HTML, CSS et JavaScript.</li>
+            <li>Les fichiers CSS sont situés dans le répertoire frontend/css.</li>
+            <li>Le code CSS est généré à partir de fichiers Sass situés dans frontend/sass.</li>
+        </ul>
+
+        <h3>Backend</h3>
+        <p>Le backend de l'application gère les opérations CRUD et la base de données. Consultez les fichiers dans le répertoire md pour accéder à la documentation détaillée du backend.</p>
+
+        <h2>Endpoints Meta-Prompt</h2>
+        <p>Chaque endpoint de l'application dispose d'un Meta-Prompt d'instruction pour vous guider dans son utilisation. Voici quelques exemples :</p>
+        <h3>Endpoint /api/tasks</h3>
+        <ul>
+            <li>CRUD Operations: Création, lecture, mise à jour et suppression de tâches.</li>
+            <li>Meta-Prompt d'instruction : Consultez prompt/api/tasks.json.</li>
+        </ul>
+
+        <h3>Endpoint /api/users</h3>
+        <ul>
+            <li>Gestion des utilisateurs.</li>
+            <li>Meta-Prompt d'instruction : Consultez prompt/api/users.json.</li>
+        </ul>
+
+        <h2>Charte Graphique</h2>
+        <p>Consultez le fichier chartre-graphique.md pour obtenir des informations sur la charte graphique et le style de l'application.</p>
+
+        <h2>Ressources Supplémentaires</h2>
+        <ul>
+            <li>Explorez le répertoire prompt pour les instructions et les intentions de prompts.</li>
+            <li>Consultez le fichier swagger.md pour des informations sur l'API et la documentation Swagger.</li>
+        </ul>
+
+        <p>Restez organisé avec Todo-App !</p>
+    </div>
 </body>
 </html>
