@@ -8,13 +8,23 @@ Pour exécuter Todo-App sur votre machine locale, suivez ces étapes :
 
 1. Clonez le référentiel depuis GitHub :
 - github
-   git clone https://github.com/universmc/todo-app.git
-
-    Accédez au répertoire du projet :
-
-    bash
-
-    cd Todo-App
+<pre>
+"╔════════════════════════════════════════════════════════╗",
+"║_/°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° \_║",
+"║                                                        ║",
+"║  git clone https://github.com/universmc/todo-app.git   ║",
+"║                                                        ║",
+"║  Accédez au répertoire du projet :                     ║",
+"║                                                        ║",
+"║  cd todo-app/                                          ║",
+"║                                                        ║",
+"║  Ajoutez une "task" la liste :                         ║",
+"║                                                        ║",
+"║  dev git commit  -m 'models/docs                       ║",
+"║_                                                      _║",
+"║ \..................................................../ ║",
+"╚════════════════════════════════════════════════════════╝"
+<pre>
 
 - Ouvrez le fichier index.html dans votre navigateur pour lancer l'application.
 
