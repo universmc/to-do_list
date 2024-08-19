@@ -1,78 +1,24 @@
-# Todo-App
-
-Bienvenue dans Todo-App, une application de gestion de tâches simple et efficace. Cette documentation vous guidera à travers l'installation, l'utilisation et la structure de l'application.
-
-## Installation
-
-Pour exécuter Todo-App sur votre machine locale, suivez ces étapes :
-
-1. Clonez le référentiel depuis GitHub :
-- github
-<pre>
-"╔════════════════════════════════════════════════════════╗",
-"║_/°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°° \_║",
-"║                                                        ║",
-"║  git clone https://github.com/universmc/todo-app.git   ║",
-"║                                                        ║",
-"║  Accédez au répertoire du projet :                     ║",
-"║                                                        ║",
-"║  cd todo-app/                                          ║",
-"║                                                        ║",
-"║  Ajoutez une "task" la liste :                         ║",
-"║                                                        ║",
-"║  dev git commit  -m 'models/docs                       ║",
-"║_                                                      _║",
-"║ \..................................................../ ║",
-"╚════════════════════════════════════════════════════════╝"
-<pre>
-
-- Ouvrez le fichier index.html dans votre navigateur pour lancer l'application.
-
-## Documentation d'Utilisation
-
-# Interface Utilisateur
-
-- Pour ajouter une nouvelle tâche, remplissez le formulaire sur la page d'accueil et cliquez sur le bouton "Ajouter Tâche".
-- Pour mettre à jour une tâche, cliquez sur la tâche que vous souhaitez modifier, apportez les modifications nécessaires dans le formulaire, puis cliquez sur "Mettre à jour".
-- Pour supprimer une tâche, cliquez sur la tâche que vous souhaitez supprimer, puis cliquez sur "Supprimer".
-
-# Structure Fullstack
-
-- La structure fullstack de l'application est divisée en plusieurs composants :
-Frontend
-
-- Le frontend de l'application est basé sur HTML, CSS et JavaScript. Les fichiers CSS sont situés dans le répertoire frontend/css. Le code CSS est généré à partir de fichiers Sass situés dans frontend/sass.
-
-tree roadma ascii
-
-/frontend
-  ├── css
-  │   ├── style.css
-  ├── sass
-  │   └── build.scss
-
-## Backend
-
-- Le backend de l'application gère les opérations CRUD et la base de données. Consultez les fichiers dans le répertoire md pour accéder à la documentation détaillée du backend.
-Endpoints Meta-Prompt
-
-- Chaque endpoint de l'application dispose d'un Meta-Prompt d'instruction pour vous guider dans son utilisation. Voici quelques exemples :
-
- * Endpoint /api/tasks
-        CRUD Operations: Création, lecture, mise à jour et suppression de tâches.
-        Meta-Prompt d'instruction : Consultez prompt/api/tasks.json.
-
- * Endpoint /api/users
-        Gestion des utilisateurs.
-        Meta-Prompt d'instruction : Consultez prompt/api/users.json.
-
-## Chartre Graphique
-
-Consultez le fichier chartre-graphique.md pour obtenir des informations sur la charte graphique et le style de l'application.
-
-- Ressources Supplémentaires
-
-- Explorez le répertoire prompt pour les instructions et les intentions de prompts.
-- Consultez le fichier swagger.md pour des informations sur l'API et la documentation Swagger.
-
-Restez organisé avec Todo-App !
+Application de Gestion de Liste de Tâches "WorkFlow Master"
+Écran d'accueil:
+Vue d'ensemble de toutes les étapes du projet avec un indicateur de progression
+Filtrer les tâches par rôle, date, étape ou membre de l'équipe
+Bouton pour ajouter de nouvelles tâches
+Écran d'ajout de tâche:
+Saisie du titre et de la description de la tâche
+Affectation de la tâche à un membre de l'équipe
+Sélection du rôle et de l'étape associés
+Définir la durée prévue et la date limite
+Écran de tâche:
+Détails complets de la tâche avec les commentaires et les fichiers attachés
+Indicateur de progression avec les statuts: à faire, en cours, terminé
+Ajouter des sous-tâches ou des étapes
+Bouton pour marquer la tâche comme terminée
+Écran de suivi:
+Vue d'ensemble du progrès global de l'équipe
+Notifications en temps réel pour les mises à jour des tâches
+Graphiques et diagrammes pour représenter les statistiques (exemple: nombre de tâches terminées par rôle)
+Fonctionnalités supplémentaires:
+Intégration à d'autres outils tels que Google Calendar ou Slack pour une meilleure collaboration
+Support de l'API pour l'intégration à d'autres services
+Personnalisation de l'interface utilisateur en fonction des préférences de l'utilisateur
+Cette application pourra être un atout important pour votre équipe en facilitant la gestion et le suivi de toutes les tâches et sous-tâches nécessaires à la réussite de votre projet "How To"

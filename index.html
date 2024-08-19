@@ -2,107 +2,250 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Todo-App</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            font-size: 24px;
-            color: #333;
-        }
-
-        h2 {
-            font-size: 20px;
-            color: #333;
-        }
-
-        code {
-            background-color: #f0f0f0;
-            padding: 2px 5px;
-            border: 1px solid #ddd;
-            border-radius: 3px;
-            font-family: Consolas, monospace;
-        }
-    </style>
+    <title>to-do_list</title>
+    <!-- Dans la section <head> -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="src/css/style.css">
+        <link rel="stylesheet" href="src/css/card.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Todo-App</h1>
-        <p>Cette documentation vous guidera à travers l'installation, l'utilisation et la structure de l'application.</p>
+  <div class="cms">
+        <button class="btn picker" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">💫</button>
+        <div class="1"><button type="button" class="btn btn-primary picker" data-bs-toggle="modal" data-bs-target="#exampleModal">💻</button></div>
+        <div class="1"><button type="button" class="btn btn-primary picker" data-bs-toggle="modal" data-bs-target="#exampleModal">📱</button></div>
+        <div class="1"><button type="button" class="btn btn-primary picker" data-bs-toggle="modal" data-bs-target="#exampleModal">📡</button></div>
+        <div class="1"><button type="button" class="btn btn-primary picker" data-bs-toggle="modal" data-bs-target="#exampleModal">🛰</button></div></div>
+    <div class="row1">
+    <header>
+      <div class="1"><button type="button" class="btn btn-primary picker" data-bs-toggle="modal" data-bs-target="#exampleModal">💬</button></div>
+      <div class="2"><button type="button" class="btn btn-primary picker" data-bs-toggle="modal" data-bs-target="#exampleModal2">📔</button></div>
+      <div class="3"><button type="button" class="btn btn-primary picker" data-bs-toggle="modal" data-bs-target="#exampleModal3">🌌</button></div>
+      <div class="4"><button type="button" class="btn btn-primary picker" data-bs-toggle="modal" data-bs-target="#exampleModal4">📚</button>    </div>
+      <div class="5"><button type="button" class="btn btn-primary picker" data-bs-toggle="modal" data-bs-target="#exampleModal5">🏗️</button> </div>
+      <div class="6"><button type="button" class="btn btn-primary picker" data-bs-toggle="modal" data-bs-target="#exampleModal6">💰</button></div>
+      <div class="7"><button type="button" class="btn btn-primary picker" data-bs-toggle="modal" data-bs-target="#exampleModal7">✨</button> </div>
 
-        <h2>Installation</h2>
-        <p>Pour exécuter Todo-App sur votre machine locale, suivez ces étapes :</p>
-        <ol>
-            <li>Clonez le référentiel depuis GitHub :</li>
-        </ol>
-        <code>git clone https://github.com/universmc/todo-app.git</code>
-        <ol start="2">
-            <li>Accédez au répertoire du projet :</li>
-        </ol>
-        <code>cd Todo-App</code>
-        <ol start="3">
-            <li>Ouvrez le fichier index.html dans votre navigateur pour lancer l'application.</li>
-        </ol>
 
-        <h2>Documentation d'Utilisation</h2>
-        <p>Interface Utilisateur :</p>
-        <ul>
-            <li>Pour ajouter une nouvelle tâche, remplissez le formulaire sur la page d'accueil et cliquez sur le bouton "Ajouter Tâche".</li>
-            <li>Pour mettre à jour une tâche, cliquez sur la tâche que vous souhaitez modifier, apportez les modifications nécessaires dans le formulaire, puis cliquez sur "Mettre à jour".</li>
-            <li>Pour supprimer une tâche, cliquez sur la tâche que vous souhaitez supprimer, puis cliquez sur "Supprimer".</li>
-        </ul>
+  <!-- Modal 💬 -->
 
-        <h2>Structure Fullstack</h2>
-        <p>La structure fullstack de l'application est divisée en plusieurs composants :</p>
-        <h3>Frontend</h3>
-        <ul>
-            <li>Le frontend de l'application est basé sur HTML, CSS et JavaScript.</li>
-            <li>Les fichiers CSS sont situés dans le répertoire frontend/css.</li>
-            <li>Le code CSS est généré à partir de fichiers Sass situés dans frontend/sass.</li>
-        </ul>
-
-        <h3>Backend</h3>
-        <p>Le backend de l'application gère les opérations CRUD et la base de données. Consultez les fichiers dans le répertoire md pour accéder à la documentation détaillée du backend.</p>
-
-        <h2>Endpoints Meta-Prompt</h2>
-        <p>Chaque endpoint de l'application dispose d'un Meta-Prompt d'instruction pour vous guider dans son utilisation. Voici quelques exemples :</p>
-        <h3>Endpoint /api/tasks</h3>
-        <ul>
-            <li>CRUD Operations: Création, lecture, mise à jour et suppression de tâches.</li>
-            <li>Meta-Prompt d'instruction : Consultez prompt/api/tasks.json.</li>
-        </ul>
-
-        <h3>Endpoint /api/users</h3>
-        <ul>
-            <li>Gestion des utilisateurs.</li>
-            <li>Meta-Prompt d'instruction : Consultez prompt/api/users.json.</li>
-        </ul>
-
-        <h2>Charte Graphique</h2>
-        <p>Consultez le fichier chartre-graphique.md pour obtenir des informations sur la charte graphique et le style de l'application.</p>
-
-        <h2>Ressources Supplémentaires</h2>
-        <ul>
-            <li>Explorez le répertoire prompt pour les instructions et les intentions de prompts.</li>
-            <li>Consultez le fichier swagger.md pour des informations sur l'API et la documentation Swagger.</li>
-        </ul>
-
-        <p>Restez organisé avec Todo-App !</p>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal 💬</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
     </div>
+  </div>
+
+<!-- slidbar📔 -->
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis exercitationem alias sit saepe temporibus, corrupti voluptas ea porro voluptates assumenda dolorum illo hic vel modi natus omnis reprehenderit blanditiis autem!
+      </div>
+      <div class="dropdown mt-3">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+          Dropdown button
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+          <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal📔 -->
+  <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">[📔.CODEX]</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Mon Rôle :
+
+            Facilitateur d'Interactions : Je suis conçu pour rendre votre expérience utilisateur aussi intuitive et agréable que possible. Que vous soyez un développeur chevronné ou un novice dans le monde de la cryptographie et de l'apprentissage automatique, je suis là pour vous guider.
+            
+            Educateur : À travers une série de documentations interactives et de tutoriels, je vous fournirai les connaissances nécessaires pour exploiter pleinement les capacités de DisKetCrypto.
+            
+            Pont entre l'Utilisateur et la Technologie : Je traduis vos commandes et requêtes en actions concrètes au sein de la plateforme, vous permettant ainsi de vous concentrer sur vos objectifs sans vous soucier des détails techniques.
+            
+            Mes Capacités :
+            
+            Traitement du Langage Naturel : Grâce à des modèles d'IA avancés, je comprends et interprète votre langage naturel, vous permettant de communiquer avec la plateforme de manière fluide.
+            
+            Apprentissage Continu : Je m'améliore constamment en apprenant de nos interactions, ce qui me permet de vous fournir des réponses et des solutions toujours plus pertinentes.
+            
+            Support Technique : Je suis équipé pour vous assister dans la résolution de problèmes techniques, vous guidant à travers les étapes de dépannage ou en vous fournissant des ressources utiles.
+            
+            Ma Vision :
+            
+            Je vise à devenir un compagnon indispensable dans votre parcours DisKetCrypto, en enrichissant votre expérience tout en simplifiant la complexité des technologies sous-jacentes. Ensemble, explorons les possibilités illimitées que DisKetCrypto a à offrir.
+          </p> 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Modal🌌 -->
+    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal 🌌</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
+<!-- Modal📚 -->
+        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal 📚</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+        </div>
+            <!-- Modal_4 -->
+    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal 4</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
+        <!-- Modal_🏗️ -->
+        <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal 🏗️</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+        </div>
+            <!-- Modal_✨ -->
+    <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal ✨</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+    </div>
+        <!-- Modal_💰 -->
+        <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal 💰</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  ...
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </header>
+      <main>
+        <div class="card-contenair">
+        <section class="Io-input" id="html">
+          <div>
+            <img src="" alt="">
+            <div class="info">
+              <div class="cloud"></div>
+              <div class="note">INPUT</div>
+              <div class="groq">Groq</div>
+            </div>
+          </div>
+        </section>
+        <section class="iO-output" id="css">
+          <div>
+            <img src="" alt="">
+            <div class="info">
+              <div class="cloud">OUTPUT</div>
+              <div class="note">WINDOWS</div>
+              <div class="groq">groq</div>
+            </div>
+          </div>
+        </section>
+      </div>
+      </main>
+    </div>
+    <footer>cc by mc, neoFS & Pi.ia</footer>
+    <script src="src/js/intro.js"></script>
+    <script src="src/js/dev-EP.js"></script>
+    <script src="src/js/modals.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </body>
 </html>
